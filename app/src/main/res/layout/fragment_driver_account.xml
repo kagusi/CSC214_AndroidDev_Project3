@@ -1,0 +1,207 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="assignment02.csc214.project3.Driver.DriverAccountFragment">
+
+<LinearLayout android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:layout_width="0px"
+              android:layout_height="0px" >
+    <requestFocus />
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/driver_ProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+<ScrollView
+    android:id="@+id/scrollLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mycustomborder"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f9f9f5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/DriverProfile_TitletextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="My Account"
+                android:textColor="#344997"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+
+            <ImageView
+                android:id="@+id/DriverProfile_ProfilePixImageView"
+                android:layout_width="151dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/empty_profile_image"/>
+
+            <Button
+                android:id="@+id/DriverProfile_UploadImageButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#4CAF50"
+                android:text="Change Picture"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/DriverProfile_FullNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#070707"/>
+
+                <EditText
+                    android:id="@+id/DriverProfile_FullNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter full name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/DriverSSNTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SSN:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#070707"/>
+
+                <EditText
+                    android:id="@+id/DriverSSNEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter full ssn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/DriverProfile_DateOfBirthTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#070707"/>
+
+                <EditText
+                    android:id="@+id/DriverProfile_DateOfBirthEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter mm/dd/yyyy"
+                    android:inputType="date"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/DriverProfile_PhoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone: "
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="#070707"/>
+
+                <EditText
+                    android:id="@+id/DriverProfile_PhoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:hint="Enter phone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/DriverProfile_BioTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#070707"/>
+
+            <EditText
+                android:id="@+id/DriverProfile_AddressEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:lines="6"
+                android:background="@drawable/mycustomborder"
+                android:hint="Enter full address"/>
+
+            <Button
+                android:id="@+id/DriverProfile_UpdateButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Update Account"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttonshapes"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</FrameLayout>

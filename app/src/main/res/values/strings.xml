@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Zap Shoppers</string>
+    <string name="title_activity_driver">DriverActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="remove"><u>Remove</u></string>
+    <string name="comfirm_order">COMFIRM ORDER</string>
+    <string name="shopper_found">SHOPPER FOUND</string>
+    <string name="YourGrocery">Your groccery will be delivered by</string>
+    <string name="withinMinutes">within few minutes</string>
+    <string name="stores_nearer_you"><u>Stores Nearer You</u></string>
+    <string name="create_account">Create Account</string>
+    <string name="become_a_shopper">Become a Shopper</string>
+</resources>

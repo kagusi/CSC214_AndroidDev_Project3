@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="assignment02.csc214.project3.Customer.ViewCartFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cart_titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR CART"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="#2E7D32"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cartTable_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_titleTextView"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:clipToPadding="false"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4CAF50"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cart_ContinueShopButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:text="Continue Shopping"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/cart_checkoutShopButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_weight="1"
+            android:text="Checkout $75.45"
+            android:textAlignment="viewEnd"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

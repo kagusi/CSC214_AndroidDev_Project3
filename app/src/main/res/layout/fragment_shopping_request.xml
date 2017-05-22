@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="assignment02.csc214.project3.Driver.ShoppingRequestFragment">
+
+    <LinearLayout android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:layout_width="0px"
+                  android:layout_height="0px" >
+        <requestFocus />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/NoRequest_Found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No shopping request found!"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ShopRequest_layout"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/innercustom_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="#2E7D32"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOPPING REQUEST"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="#f9f7f7"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name:"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:textColor="#080808"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <TextView
+                android:id="@+id/shopReuest_customerNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="James Martin"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:textColor="#080808"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:textColor="#080808"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/shopReuest_deliveryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1091 Genesee Str, Rochester"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Requested"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:textColor="#080808"
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shopping Store:"
+                    android:textStyle="bold"
+                    android:textSize="23sp"
+                    android:textColor="#080808"
+                    android:fontFamily="sans-serif-condensed"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shopReuest_requestedStoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Walmart) 2150 Chili Ave, Rochester"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="65dp">
+
+            <Button
+                android:id="@+id/shopReuest_acceptButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="151dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#4CAF50"
+                android:text="Accept"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/shopReuest_rejectButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="151dp"
+                android:layout_marginStart="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#4CAF50"
+                android:text="Reject"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+

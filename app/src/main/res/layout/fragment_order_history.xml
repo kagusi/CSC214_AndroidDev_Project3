@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="assignment02.csc214.project3.Customer.ViewCartFragment">
+
+
+            <TextView
+                android:id="@+id/cart_titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER HISTORY"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="#2E7D32"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/orderHistory_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_titleTextView"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:clipToPadding="false"/>
+
+
+
+</RelativeLayout>

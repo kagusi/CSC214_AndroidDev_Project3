@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d1752a"
+    tools:context="assignment02.csc214.project3.Customer.BrowserFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#19752a">
+
+
+
+    <TextView
+        android:id="@+id/text_view_web_bowser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="WEB BROWSER"
+        android:textAlignment="center"
+        android:background="#19752a"
+        android:textColor="#bebe1a"
+        android:padding="6dp"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linear_layout_url"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#5b7519"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://"
+        android:labelFor="@+id/edit_text_uri"
+        android:layout_margin="3dp"
+        android:fontFamily="monospace"
+        android:textColor="#c4c126"
+        android:gravity="center_vertical"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_uri"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textUri"
+        android:textColor="#bb7014"
+        android:fontFamily="monospace"
+        tools:text="Url Goes Here"
+        />
+
+    <ImageButton
+        android:id="@+id/button_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/stop_icon"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="#29c426"
+        android:contentDescription="Stop Loading"
+        />
+
+</LinearLayout>
+
+<WebView
+    android:id="@+id/web_view"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#c4c126"
+    >
+
+</WebView>
+
+<ProgressBar
+    android:id="@+id/progress_bar_bowser"
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:visibility="gone"
+    style="@android:style/Widget.ProgressBar.Horizontal"
+    />
+
+</LinearLayout>

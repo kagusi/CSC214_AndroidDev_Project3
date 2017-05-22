@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/customerMenu_home"
+            android:icon="@mipmap/home_icon"
+            android:title="Home"/>
+        <item
+            android:id="@+id/customerMenu_SelectStore"
+            android:icon="@mipmap/select_a_storeicon"
+            android:title="Select Store"/>
+        <item
+            android:id="@+id/customerMenu_OrderHistory"
+            android:icon="@mipmap/order_historyicon"
+            android:title="Order History"/>
+        <item
+            android:id="@+id/customerMenu_MyAccount"
+            android:icon="@drawable/acct_icon"
+            android:title="My Account"/>
+        <item
+            android:id="@+id/customerMenu_PlayMusic"
+            android:icon="@mipmap/playicon"
+            android:title="Play Music"/>
+        <item
+            android:id="@+id/customerMenu_Browse"
+            android:icon="@mipmap/browser_icon"
+            android:title="Browse"/>
+        <item
+            android:id="@+id/customerMenu_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/customerMenu_Share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/customerMenu_Help"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Help"/>
+        </menu>
+    </item>
+
+</menu>

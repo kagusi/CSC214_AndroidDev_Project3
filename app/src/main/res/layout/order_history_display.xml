@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:showDividers="middle"
+               android:background="#92C94A">
+
+    <TextView
+        android:id="@+id/orderHistory_OrderIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OrderID"
+        android:textColor="#080808"
+        android:textSize="18sp"
+        android:singleLine="false"/>
+
+    <TextView
+        android:id="@+id/orderHistory_ItemsOrdered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Items"
+        android:textColor="#080808"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:singleLine="false"/>
+
+    <TextView
+        android:id="@+id/orderHistory_DriverTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Driver"
+        android:textAlignment="center"
+        android:textColor="#080808"
+        android:layout_gravity="left"
+        android:textSize="18sp"
+        android:singleLine="false"/>
+
+    <TextView
+        android:id="@+id/orderHistory_DateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="end"
+        android:textColor="#080808"
+        android:textAlignment="viewEnd"
+        android:text="Date"
+        android:textSize="15sp"/>
+
+</LinearLayout >

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/driverMenu_home"
+            android:icon="@mipmap/home_icon"
+            android:title="Home"/>
+        <item
+            android:id="@+id/driverMenu_account"
+            android:icon="@drawable/acct_icon"
+            android:title="My Account"/>
+        <item
+            android:id="@+id/driverMenu_rides"
+            android:icon="@drawable/delivery_icon"
+            android:title="Delivery History"/>
+        <item
+            android:id="@+id/driverMenu_requestPayment"
+            android:icon="@drawable/ic_action_name"
+            android:title="Request Payment"/>
+        <item
+            android:id="@+id/driverMenu_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+
+        </menu>
+    </item>
+
+</menu>
